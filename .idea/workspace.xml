@@ -5,13 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6456e92e-3e8a-4417-b9c3-a0d6d39355fc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/controller/RegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/repository/UserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/repository/UserRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/registration.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/registration.ftl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +56,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;/home/locb/_factory/java/[MY_JAVA]/MCPrincesser2/src/main/resources/templates&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;e9a09a894a5810e47456785745c9ac5e&quot;
   }
 }</component>
@@ -101,6 +105,8 @@
       <workItem from="1705883811735" duration="2778000" />
       <workItem from="1705939254887" duration="606000" />
       <workItem from="1705940414419" duration="6001000" />
+      <workItem from="1705971104101" duration="2476000" />
+      <workItem from="1706022856571" duration="3947000" />
     </task>
     <servers />
   </component>
