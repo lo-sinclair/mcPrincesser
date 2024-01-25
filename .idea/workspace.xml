@@ -7,14 +7,11 @@
     <list default="true" id="6456e92e-3e8a-4417-b9c3-a0d6d39355fc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/config/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/controller/RegistrationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/repository/UserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/repository/UserRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/registration.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/registration.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/common.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/common.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/navbar.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/navbar.ftl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +103,10 @@
       <workItem from="1705939254887" duration="606000" />
       <workItem from="1705940414419" duration="6001000" />
       <workItem from="1705971104101" duration="2476000" />
-      <workItem from="1706022856571" duration="3947000" />
+      <workItem from="1706022856571" duration="4441000" />
+      <workItem from="1706057447802" duration="1843000" />
+      <workItem from="1706120135165" duration="2936000" />
+      <workItem from="1706145546938" duration="302000" />
     </task>
     <servers />
   </component>
