@@ -1,4 +1,4 @@
-package xyz.losi.mcprincesser.domain;
+package xyz.losi.mcprincesser.model;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

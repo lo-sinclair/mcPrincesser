@@ -5,9 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6456e92e-3e8a-4417-b9c3-a0d6d39355fc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/script/deploy.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bash/deploy.sh" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/controller/RegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/domain/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/model/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/repository/UserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/repository/UserRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +31,7 @@
       <list>
         <option value="HTML File" />
         <option value="Enum" />
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -49,27 +61,57 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/locb/_factory/java/[MY_JAVA]/MCPrincesser2/src/main/resources",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "/home/locb/_factory/java/[MY_JAVA]",
     "nodejs_package_manager_path": "npm",
-    "spring.configuration.checksum": "e9a09a894a5810e47456785745c9ac5e"
+    "spring.configuration.checksum": "13a0689f51468869562c753b4fca2f2e"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/.." />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
-      <recent name="$PROJECT_DIR$/src/main/resources/templates" />
+      <recent name="$PROJECT_DIR$/conf" />
+      <recent name="$PROJECT_DIR$/script" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/bash" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/resources/bash/org" />
       <recent name="$PROJECT_DIR$/src/main/resources/static/css" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="xyz.losi.mcprincesser.domain" />
     </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="xyz.losi.mcprincesser.rest" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.Application">
+    <configuration name="MainTest.saveResource" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mcPrincesser2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="xyz.losi.mcprincesser.rest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="xyz.losi.mcprincesser.rest" />
+      <option name="MAIN_CLASS_NAME" value="xyz.losi.mcprincesser.rest.MainTest" />
+      <option name="METHOD_NAME" value="saveResource" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <option name="ACTIVE_PROFILES" />
-      <module name="MCPrincesser2" />
+      <module name="mcPrincesser2" />
       <option name="PROGRAM_PARAMETERS" value="--spring.profiles.active=dev" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="xyz.losi.mcprincesser.Application" />
       <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
@@ -81,6 +123,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MainTest.saveResource" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -117,7 +164,20 @@
       <workItem from="1706229995541" duration="37000" />
       <workItem from="1706300969035" duration="347000" />
       <workItem from="1706657473876" duration="6000" />
-      <workItem from="1706824027656" duration="1326000" />
+      <workItem from="1706824027656" duration="3524000" />
+      <workItem from="1706835523236" duration="3802000" />
+      <workItem from="1706888338369" duration="11388000" />
+      <workItem from="1706972331448" duration="3606000" />
+      <workItem from="1707011228349" duration="596000" />
+      <workItem from="1707058279478" duration="12705000" />
+      <workItem from="1707093789414" duration="60000" />
+      <workItem from="1707094277390" duration="1227000" />
+      <workItem from="1707147390365" duration="6701000" />
+      <workItem from="1707167048796" duration="5390000" />
+      <workItem from="1707178796363" duration="730000" />
+      <workItem from="1707179600500" duration="433000" />
+      <workItem from="1707225305180" duration="14703000" />
+      <workItem from="1707314500337" duration="3779000" />
     </task>
     <servers />
   </component>

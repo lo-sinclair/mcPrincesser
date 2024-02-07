@@ -8,8 +8,8 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
-import xyz.losi.mcprincesser.domain.Role;
-import xyz.losi.mcprincesser.domain.User;
+import xyz.losi.mcprincesser.model.Role;
+import xyz.losi.mcprincesser.model.User;
 import xyz.losi.mcprincesser.repository.UserRepo;
 
 import java.util.*;

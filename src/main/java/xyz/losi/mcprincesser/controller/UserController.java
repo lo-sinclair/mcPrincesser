@@ -6,8 +6,8 @@ import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import xyz.losi.mcprincesser.domain.Role;
-import xyz.losi.mcprincesser.domain.User;
+import xyz.losi.mcprincesser.model.Role;
+import xyz.losi.mcprincesser.model.User;
 import xyz.losi.mcprincesser.service.UserService;
 
 import java.util.Map;

@@ -6,7 +6,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import xyz.losi.mcprincesser.domain.User;
+import xyz.losi.mcprincesser.model.User;
 import xyz.losi.mcprincesser.service.UserService;
 
 import java.util.Map;

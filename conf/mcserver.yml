@@ -1,0 +1,6 @@
+mcserver:
+    servers:
+      - name: "Игровой"
+        dir: "/var/www/mc2"
+      - name: "Разработка"
+        dir: "/var/www/mcd"
