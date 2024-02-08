@@ -3,7 +3,7 @@ package xyz.losi.mcprincesser.config;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
-import xyz.losi.mcprincesser.model.dto.ServerProp;
+import xyz.losi.mcprincesser.model.dto.GameServer;
 
 import java.util.List;
 
@@ -13,13 +13,13 @@ import java.util.List;
 
 public class McServerYmlProperties {
 
-    private List<ServerProp> servers;
+    private List<GameServer> servers;
 
-    public List<ServerProp> getServers() {
+    public List<GameServer> getServers() {
         return servers;
     }
 
-    public void setServers(List<ServerProp> servers) {
+    public void setServers(List<GameServer> servers) {
         this.servers = servers;
     }
 

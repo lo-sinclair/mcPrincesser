@@ -17,5 +17,6 @@
             <button class="btn btn-primary" type="submit">Start</button>
         </form>
     </div>
+    <script src="/static/js/main.js"/>
 </@c.page>
 

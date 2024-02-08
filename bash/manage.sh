@@ -7,7 +7,7 @@ getdir1() {
 }
 
 getdir(){
-  p=($(pgrep -f server.jar))
+  p=($(pgrep -f mcserver.jar))
   pwdx ${p} | awk '{print $2}'
 }
 
