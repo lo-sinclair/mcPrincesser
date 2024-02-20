@@ -1,41 +1,29 @@
+"use strict";
 
-function go() {
-    alert("Go");
+
+window.onload = function () {
+
+    window.eventSource = registerSSE('http://localhost:8080/api/register-client');
+
+    window.addEventListener('beforeunload', () => {
+        eventSource.close();
+    });
 }
 
-async function fetchMoviesJSON() {
-    const response = await fetch('http://localhost:8080/api/status');
-    const movies = await response.json();
-    return movies;
+
+function handleStatusEvent(data) {
+    console.log(data);
+    document.getElementById('info').innerText = data.servers[0].name;
 }
-fetchMoviesJSON().then(movies => {
-    movies; // полученный список фильмов
-    console.log(movies);
-});
 
-
-
-async function subscribe() {
-    let response = await fetch("/subscribe");
-
-    if (response.status == 502) {
-        // Статус 502 - это таймаут соединения;
-        // возможен, когда соединение ожидало слишком долго
-        // и сервер (или промежуточный прокси) закрыл его
-        // давайте восстановим связь
-        await subscribe();
-    } else if (response.status != 200) {
-        // Какая-то ошибка, покажем её
-        showMessage(response.statusText);
-        // Подключимся снова через секунду.
-        await new Promise(resolve => setTimeout(resolve, 1000));
-        await subscribe();
-    } else {
-        // Получим и покажем сообщение
-        let message = await response.text();
-        showMessage(message);
-        // И снова вызовем subscribe() для получения следующего сообщения
-        await subscribe();
-    }
+function registerSSE(url) {
+    const source = new EventSource(url);
+    source.addEventListener('status', event => {
+        handleStatusEvent(JSON.parse(event.data));
+    })
+    source.onopen = event => console.log("Connection opened");
+    source.onerror = event => console.log("Connection error");
+    return source
 }
+
 

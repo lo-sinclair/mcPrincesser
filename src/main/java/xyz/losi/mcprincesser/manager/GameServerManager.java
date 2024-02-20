@@ -26,12 +26,10 @@ public class GameServerManager {
     public GameServer findServerByDir(String dirPath){
         List<GameServer> servers = mcServerProperties.getServers();
         System.out.println(dirPath);
-this.getClass().ge
         for (GameServer server : servers) {
             if (server.getDir().equals(dirPath)) {
                 return server;
             }
-
         }
         return null;
     }

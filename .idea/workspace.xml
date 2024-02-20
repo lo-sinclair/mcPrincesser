@@ -6,14 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="6456e92e-3e8a-4417-b9c3-a0d6d39355fc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bash/manage.sh" beforeDir="false" afterPath="$PROJECT_DIR$/bash/manage.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/mcserver.yml" beforeDir="false" afterPath="$PROJECT_DIR$/conf/mcserver.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/config/McServerYmlProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/config/McServerYmlProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/model/dto/ServerProp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/model/dto/GameServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/manager/GameServerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/manager/GameServerManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/rest/ManageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/rest/ManageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bash/manage.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bash/manage.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/conf/mcserver.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/conf/mcserver.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/main.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/main.ftl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,8 +55,9 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/locb/_factory/java/[MY_JAVA]&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/locb/_factory/java/[JAVA_SAMPLES]/demo-chat-app-sse-spring-boot&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;13a0689f51468869562c753b4fca2f2e&quot;
   }
 }</component>
@@ -176,6 +174,18 @@
       <workItem from="1707349819147" duration="3693000" />
       <workItem from="1707403373344" duration="118000" />
       <workItem from="1707404192264" duration="2033000" />
+      <workItem from="1707435424891" duration="1488000" />
+      <workItem from="1707437165729" duration="4655000" />
+      <workItem from="1707523914589" duration="3583000" />
+      <workItem from="1707577746074" duration="307000" />
+      <workItem from="1707613035368" duration="3287000" />
+      <workItem from="1707661943384" duration="2142000" />
+      <workItem from="1707666682526" duration="3402000" />
+      <workItem from="1707683039808" duration="2303000" />
+      <workItem from="1707685675161" duration="5826000" />
+      <workItem from="1707701997336" duration="930000" />
+      <workItem from="1708022853392" duration="638000" />
+      <workItem from="1708304775548" duration="154000" />
     </task>
     <servers />
   </component>
@@ -193,7 +203,11 @@
       </map>
     </option>
   </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/MCPrincesser2$Application.ic" NAME="Application Coverage Results" MODIFIED="1705775281424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/MCPrincesser2$Application.ic" NAME="Application Coverage Results" MODIFIED="1707441318338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

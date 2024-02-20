@@ -11,6 +11,7 @@
     <h1>Main</h1>
     <div>${some}</div>
     <div>
+        <div id="info"></div>
         <form action="/start" method="post">
             <input type="hidden" name="_csrf" value="${_csrf.token}" />
             <input type="hidden" name="version" value="mc20" />
