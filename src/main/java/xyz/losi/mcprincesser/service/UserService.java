@@ -15,7 +15,7 @@ import xyz.losi.mcprincesser.repository.UserRepo;
 import java.util.*;
 import java.util.stream.Collectors;
 
-@Service
+@Service("userService")
 public class UserService implements UserDetailsService {
     @Autowired
     private UserRepo userRepo;
@@ -31,16 +31,17 @@ public class UserService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        User user = userRepo.findByUsername(username);
-        if (user != null) {
+        User user = userRepo.findByUsername(username).orElseThrow(() -> new UsernameNotFoundException("Not found: " + username));
+        return user;
+        /*if (user != null) {
             return user;
         } else {
             throw new UsernameNotFoundException("Not found: " + username);
-        }
+        }*/
     }
 
     public boolean addUser(User user){
-        User userFromDb = userRepo.findByUsername(user.getUsername());
+        User userFromDb = userRepo.findByUsername(user.getUsername()).orElse(null);
 
         if(userFromDb != null ) {
             return false;
