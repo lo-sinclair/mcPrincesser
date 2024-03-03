@@ -11,4 +11,5 @@ getdir(){
   pwdx ${p} | awk '{print $2}'
 }
 
+
 $1

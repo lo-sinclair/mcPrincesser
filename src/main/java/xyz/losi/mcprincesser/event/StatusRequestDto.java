@@ -13,8 +13,9 @@ import java.util.List;
 @Setter
 @AllArgsConstructor
 public class StatusRequestDto {
+    boolean ready;
+
     private List<GameServer> servers = new ArrayList<>();
 
     private GameServer activeServer;
-
 }

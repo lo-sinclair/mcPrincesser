@@ -14,7 +14,5 @@ public class Init implements CommandLineRunner {
     public void run(String... args) throws Exception {
         System.out.println("\u001B[32mmcPrincesser init!\033[39m");
 
-
-
     }
 }

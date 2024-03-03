@@ -7,9 +7,9 @@ public class GameServer {
 
     private String dir;
 
-    public String getName() {
-        return name;
-    }
+    private boolean active;
+
+
 
     public GameServer() {
 
@@ -19,6 +19,18 @@ public class GameServer {
         this.name = name;
         this.title = title;
         this.dir = dir;
+        this.active = false;
+    }
+
+    public GameServer(String name, String title, String dir, boolean active) {
+        this.name = name;
+        this.title = title;
+        this.dir = dir;
+        this.active = active;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public void setName(String name) {
@@ -41,12 +53,21 @@ public class GameServer {
         this.dir = dir;
     }
 
+    public boolean isActive() {
+        return active;
+    }
+
+    public void setActive(boolean active) {
+        this.active = active;
+    }
+
     @Override
     public String toString() {
-        return "ServerProp{" +
+        return "GameServer{" +
                 "name='" + name + '\'' +
                 ", title='" + title + '\'' +
                 ", dir='" + dir + '\'' +
+                ", active=" + active +
                 '}';
     }
 }

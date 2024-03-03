@@ -10,7 +10,7 @@ p=($(ps -ax  | grep -E 'java.*server.jar' | awk '{print $1}'))
 echo ${p[0]}
 
 
-if pgrep -f server.jar > /dev/null;
+if pgrep -f mcserver.jar > /dev/null;
 then
   echo "Сервер останавливается!"
   screen -S mc -X eval 'stuff "^U"'

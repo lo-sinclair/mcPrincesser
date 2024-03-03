@@ -4,9 +4,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.method.annotation.SseEmitter;
 import xyz.losi.mcprincesser.event.EventHandler;
 import xyz.losi.mcprincesser.manager.GameServerManager;
@@ -26,7 +24,7 @@ public class ManageController {
     @Autowired
     private GameServerManager gameServerManager;
 
-    public List<SseEmitter> emitters = new CopyOnWriteArrayList<>();
+    public volatile List<SseEmitter> emitters = new CopyOnWriteArrayList<>();
 
     private final EventHandler eventHandler;
 
@@ -39,18 +37,23 @@ public class ManageController {
 
 
     @GetMapping("register-client")
-    @PreAuthorize("hasAnyAuthority('ADMIN')")
+    //@PreAuthorize("hasAnyAuthority('ADMIN')")
     public SseEmitter sseEmitter() {
         return eventHandler.registerClient();
     }
 
 
-    @GetMapping("start")
-    public void startServer() {
-        System.out.println("Start");
-        eventHandler.startServer();
+    @GetMapping("event/update")
+    public void updateEvent() {
+        System.out.println("UUUUPPP");
+        eventHandler.updateServers();
     }
 
+    @GetMapping("start")
+    public void start(@RequestParam String serverName) throws IOException {
+        GameServer gameServer = gameServerManager.getGameServerByName(serverName);
+        gameServerManager.startServer(gameServer);
+    }
 
 /*
     @GetMapping(path = "events/{text}", produces = MediaType.TEXT_EVENT_STREAM_VALUE)

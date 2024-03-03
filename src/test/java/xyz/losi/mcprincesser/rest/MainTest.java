@@ -6,7 +6,7 @@ import java.net.URISyntaxException;
 class MainTest {
 
     public void saveResource() throws FileNotFoundException, URISyntaxException {
-        String resourcePath = "bash/manage.sh";
+        String resourcePath = "bash/functions.sh";
         String[] split = resourcePath.split("/");
         for(String st : split) {
             System.out.println(st);
@@ -17,7 +17,7 @@ class MainTest {
         dir2.mkdir();
         /*File outDir = new File("bash");
 
-        File outFile = new File(outDir, "manage.sh");
+        File outFile = new File(outDir, "functions.sh");
 
         if(outFile.exists()) {
             return;
@@ -26,7 +26,7 @@ class MainTest {
             outDir.mkdir();
         }
 
-        InputStream resource = getClass().getResourceAsStream("/bash/manage.sh");
+        InputStream resource = getClass().getResourceAsStream("/bash/functions.sh");
 
         System.out.println(resource);
 

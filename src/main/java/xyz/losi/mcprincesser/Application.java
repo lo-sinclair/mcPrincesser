@@ -14,8 +14,10 @@ import java.io.InputStream;
 public class Application {
     public static void main(String[] args) throws IOException {
 
-        if(FileUtils.saveResource("/bash/manage.sh", true))
-            Runtime.getRuntime().exec("chmod +x bash/manage.sh");
+        if(FileUtils.saveResource("/bash/functions.sh", true))
+            Runtime.getRuntime().exec("chmod +x bash/functions.sh");
+        if(FileUtils.saveResource("/bash/start.sh", true))
+            Runtime.getRuntime().exec("chmod +x bash/start.sh");
 
         if(FileUtils.saveResource("/conf/mcserver.yml", false));
 

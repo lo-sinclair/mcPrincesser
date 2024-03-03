@@ -1,13 +1,11 @@
 package xyz.losi.mcprincesser.event;
 
-import ch.qos.logback.classic.net.SimpleSSLSocketServer;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.mvc.method.annotation.SseEmitter;
 import xyz.losi.mcprincesser.manager.GameServerManager;
-import xyz.losi.mcprincesser.model.dto.GameServer;
 
 import java.io.IOException;
 import java.util.HashSet;
@@ -32,12 +30,14 @@ public class EventHandler {
         emitter.onError((err) -> removeAndLogError(emitter));
         emitter.onTimeout(() -> removeAndLogError(emitter));
         registeredEmitters.add(emitter);
+        gameServerManager.updateServers();
         sendData(emitter);
         log.info("New client registered {}", emitter.toString());
         return emitter;
     }
 
-    public void startServer() {
+    public void updateServers() {
+        gameServerManager.updateServers();
         Set<SseEmitter> emitters = Set.copyOf(registeredEmitters);
         for (SseEmitter emitter: emitters) {
             sendData(emitter);
@@ -51,19 +51,17 @@ public class EventHandler {
 
 
     private void sendData(SseEmitter sseEmitter) {
-
         try {
             log.info("Send status to client");
             int id = ID_COUNTER.incrementAndGet();
 
             SseEmitter.SseEventBuilder eventBuilder = event().name("status")
                     .id(String.valueOf(id))
-                    .data(new StatusRequestDto(gameServerManager.findAllServers(), gameServerManager.getActiveServer()), MediaType.APPLICATION_JSON);
+                    .data(new StatusRequestDto(gameServerManager.isLock(), gameServerManager.getGameServerList(), gameServerManager.getActiveServer()), MediaType.APPLICATION_JSON);
             sseEmitter.send(eventBuilder);
         } catch (IOException e) {
             sseEmitter.completeWithError(e);
         }
     }
-
 
 }

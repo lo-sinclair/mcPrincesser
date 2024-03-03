@@ -6,13 +6,23 @@
   <component name="ChangeListManager">
     <list default="true" id="6456e92e-3e8a-4417-b9c3-a0d6d39355fc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bash/manage.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bash/functions.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/Init.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/Init.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/config/MvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/config/MvcConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/config/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/repository/UserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/repository/UserRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/event/EventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/event/EventHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/event/StatusRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/event/StatusRequestDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/manager/GameServerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/manager/GameServerManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/model/dto/GameServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/model/dto/GameServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/rest/ManageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/rest/ManageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/xyz/losi/mcprincesser/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/bash/manage.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/bash/note.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bash/note.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/main.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/main.ftl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/login.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/login.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/navbar.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/navbar.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/xyz/losi/mcprincesser/rest/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/xyz/losi/mcprincesser/rest/MainTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,9 +33,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Enum" />
         <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -56,7 +66,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/locb/_factory/java/[JAVA_SAMPLES]/demo-chat-app-sse-spring-boot&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/locb/_factory/java/[JAVA_LESSONS]/ZaurTregulov/java-course2&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
@@ -193,7 +203,27 @@
       <workItem from="1708387384515" duration="6663000" />
       <workItem from="1708436999796" duration="8899000" />
       <workItem from="1708639903369" duration="6431000" />
-      <workItem from="1708730072877" duration="7503000" />
+      <workItem from="1708730072877" duration="9372000" />
+      <workItem from="1708892505535" duration="2313000" />
+      <workItem from="1708985587518" duration="6742000" />
+      <workItem from="1709040450839" duration="2261000" />
+      <workItem from="1709048670655" duration="1074000" />
+      <workItem from="1709050100855" duration="7531000" />
+      <workItem from="1709131019162" duration="151000" />
+      <workItem from="1709150012023" duration="1730000" />
+      <workItem from="1709153680401" duration="2772000" />
+      <workItem from="1709171911239" duration="2938000" />
+      <workItem from="1709211975404" duration="488000" />
+      <workItem from="1709212622587" duration="956000" />
+      <workItem from="1709246447767" duration="3390000" />
+      <workItem from="1709280839053" duration="2348000" />
+      <workItem from="1709283684805" duration="790000" />
+      <workItem from="1709325653489" duration="3978000" />
+      <workItem from="1709340864740" duration="980000" />
+      <workItem from="1709341886614" duration="1394000" />
+      <workItem from="1709416927505" duration="644000" />
+      <workItem from="1709497527880" duration="3952000" />
+      <workItem from="1709508788870" duration="300000" />
     </task>
     <servers />
   </component>
