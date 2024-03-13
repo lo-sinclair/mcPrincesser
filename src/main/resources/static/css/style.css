@@ -1,3 +1,27 @@
 body {
     color: #113;
 }
+#top-logo {
+    overflow: hidden;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+._jbg img {
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar {
+    background-color: #F5A8B2;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    color: #0070D2;
+}
+.navbar-brand {
+    color: #000;
+}

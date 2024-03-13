@@ -9,11 +9,8 @@
 
     <div>
         <div id="info"></div>
-        <form action="/start" method="post">
-            <input type="hidden" name="_csrf" value="${_csrf.token}" />
-            <input type="hidden" name="version" value="mc20" />
-        </form>
     </div>
-    <script src="/static/js/main.js"/>
+
+    <script src="/static/js/main.js"></script>
 </@c.page>
 

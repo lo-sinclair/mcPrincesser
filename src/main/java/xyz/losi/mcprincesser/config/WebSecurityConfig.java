@@ -65,9 +65,13 @@ public class WebSecurityConfig {
     @Bean
     @Order(2)
     public SecurityFilterChain formLoginFilterChain(HttpSecurity http) throws Exception {
+        String[] resources = new String[]{
+                "/css/**","/icons/**","/img/**","/js/**"
+        };
         http
                 .authorizeRequests()
-                .antMatchers("/", "/registration", "/static/**", "/activate/*", "/login").permitAll()
+                .antMatchers( "/", "/registration", "/static/**", "/activate/*", "/login").permitAll()
+                .antMatchers(resources).permitAll()
                 .antMatchers("/api/**").permitAll()
                 .anyRequest().authenticated()
                 .and()

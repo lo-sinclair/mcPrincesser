@@ -1,5 +1,4 @@
-URL='http://localhost:8080/api/event/update'
-
+URL="http://$2/api/event/update"
 
 if pgrep -f mcserver.jar > /dev/null;
 then
@@ -18,5 +17,5 @@ screen -S mc -X eval 'stuff "^U"'
 #screen -S mc -X eval 'stuff "\025"'
 screen -S mc -X  eval 'stuff "cd '$1'\015"'
 screen -S mc -X eval 'stuff "./start.sh\015"'
-sleep 2
+sleep 1
 curl "$URL"

@@ -36,3 +36,7 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+### My ###
+src/main/resources/application.properties
+src/main/resources/application-dev.properties

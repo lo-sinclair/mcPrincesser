@@ -1,5 +1,4 @@
-URL='http://localhost:8080/api/event/update'
-
+URL="http://$2/api/event/update"
 
 if pgrep -f mcserver.jar > /dev/null;
 then

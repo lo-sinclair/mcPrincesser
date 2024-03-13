@@ -2,7 +2,18 @@
 
 
 window.onload = function () {
-    window.eventSource = registerSSE('http://localhost:8080/api/register-client');
+    let href = window.location.href;
+    console.log(window.location.host);
+    if (href.includes('localhost')) {
+        window.mainUrl = 'http://localhost:8080';
+    }
+    else {
+        window.mainUrl ='http://94.176.234.20:8081';
+    }
+    console.log(mainUrl);
+
+
+    window.eventSource = registerSSE(mainUrl+'/api/register-client');
 
     window.addEventListener('beforeunload', () => {
         eventSource.close();
@@ -11,6 +22,7 @@ window.onload = function () {
 }
 
 function documentActions(e) {
+
     const targetElement = e.target;
     if(targetElement.classList.contains('start-server')) {
         let buttons = document.getElementsByClassName("start-server");
@@ -20,7 +32,7 @@ function documentActions(e) {
 
         let attribute = targetElement.getAttribute('serverName');
 
-        fetch('http://localhost:8080/api/start?serverName=' + attribute)
+        fetch(mainUrl+'/api/start?serverName=' + attribute)
             .then((response) => {
                 console.log(response);
             });
@@ -45,7 +57,8 @@ function handleStatusEvent(data) {
         content += '<th scope="row">' + (i+1) + '</th>';
         content += '<td class="title">' + servers[i].title + '</td>';
         content += '<td class="status">' + server_status + '</td>';
-        content += '<td><button class="btn btn-primary start-server" serverName="' + servers[i].name +  '" type="submit"' + button_state + '>Start</button></td>';
+        content += '<td><button class="btn btn-primary start-server" serverName="' + servers[i].name +  '" type="submit"' + button_state + '>' +
+            '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>Start</button></td>';
         content += '</tr>';
     }
 
