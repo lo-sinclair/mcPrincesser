@@ -3,6 +3,7 @@ package xyz.losi.mcprincesser.manager;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.lang.Nullable;
 import org.springframework.stereotype.Component;
 import xyz.losi.mcprincesser.config.McServerYmlProperties;
@@ -21,6 +22,8 @@ public class GameServerManager {
     @Autowired
     private McServerYmlProperties mcServerProperties;
     private Map<String, GameServer> gameServerMap = new HashMap<>();
+    @Value("${hostname}")
+    private String hostname;
     @Nullable
     private GameServer activeServer;
     private boolean lock;
@@ -68,30 +71,13 @@ public class GameServerManager {
     public void updateActiveServer() {
         System.out.println(Color.GREEN + "UP_ACTIVE" + counter +Color.RESET); counter++;
         List<String> getdir = execFunction("getdir");
-        System.out.println("GETDIR");
-        System.out.println(getdir);
         if (!getdir.isEmpty()) {
             String dirPath = getdir.get(0);
             GameServer newActiveServer = findServerByDir(dirPath);
-            System.out.println("NEW_AC");
-            System.out.println(newActiveServer);
-            System.out.println("ACT");
-            System.out.println(getActiveServer());
-            System.out.println("MMMMMM");
-            System.out.println(getGameServerMap());
             if (newActiveServer != null) {
-                System.out.println(newActiveServer);
                 if(activeServer != null)activeServer.setActive(false);
                 newActiveServer.setActive(true);
-                System.out.println("ACT");
-                System.out.println(getActiveServer());
-                System.out.println("NEW_AC_BEFORE_SET_ACTIVE");
                 setActiveServer(newActiveServer);
-                System.out.println("===============");
-                System.out.println("ACT");
-                System.out.println(getActiveServer());
-                System.out.println("MMMMMM");
-                System.out.println(getGameServerMap());
                 return;
             }
         }
@@ -100,7 +86,7 @@ public class GameServerManager {
 
 
     public void startServer(GameServer server) throws IOException {
-        ProcessBuilder processBuilder = new ProcessBuilder(START_SH, server.getDir());
+        ProcessBuilder processBuilder = new ProcessBuilder(START_SH, server.getDir(), hostname);
         Process process = processBuilder.start();
         BufferedReader output = new BufferedReader(new InputStreamReader(process.getInputStream()));
 

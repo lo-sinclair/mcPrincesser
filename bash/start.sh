@@ -1,4 +1,5 @@
 URL="http://$2/api/event/update"
+echo $URL
 
 if pgrep -f mcserver.jar > /dev/null;
 then

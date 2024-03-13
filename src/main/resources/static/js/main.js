@@ -2,16 +2,9 @@
 
 
 window.onload = function () {
-    let href = window.location.href;
-    console.log(window.location.host);
-    if (href.includes('localhost')) {
-        window.mainUrl = 'http://localhost:8080';
-    }
-    else {
-        window.mainUrl ='http://94.176.234.20:8081';
-    }
-    console.log(mainUrl);
 
+    window.mainUrl = window.location.origin;
+    console.log(mainUrl);
 
     window.eventSource = registerSSE(mainUrl+'/api/register-client');
 
