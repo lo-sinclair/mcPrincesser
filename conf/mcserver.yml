@@ -1,8 +1,0 @@
-mcserver:
-    servers:
-      - name: "mc2"
-        title: "Игровой"
-        dir: "/home/locb/mc/mc2"
-      - name: "mcd"
-        title: "Разработка"
-        dir: "/home/locb/mc/mcd"

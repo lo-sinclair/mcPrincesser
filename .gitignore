@@ -40,3 +40,7 @@ build/
 ### My ###
 src/main/resources/application.properties
 src/main/resources/application-dev.properties
+
+bash/
+script/
+conf/
